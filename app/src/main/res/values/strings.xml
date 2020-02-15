@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">SOAP_REST_Alonso</string>
+    <string name="conversor_de_divisas">Conversor de divisas</string>
+    <string name="info_div">Información:  \n USD = Dólar estadounidense \n EUR = Euro \n GBP = Libra esterlina  \n INR = Rupia india  \n CAD = Dólar canadiense  \n SGD = Dólar singapurense</string>
+    <string name="servicio_email">Servicio Email</string>
+    <string name="info_timeout">Se recomienda usar un tiempo de espera alto para un resultado más preciso, el tiempo por defecto es adecuado para el servicio.</string>
+    <string name="email">Email</string>
+    <string name="timeout_segundos">Timeout(segundos)</string>
+    <string-array name="divisas">
+        <item>"EUR"</item>
+        <item>"USD"</item>
+        <item>"GBP"</item>
+        <item>"INR"</item>
+        <item>"AUD"</item>
+        <item>"CAD"</item>
+        <item>"SGD"</item>
+    </string-array>
+</resources>

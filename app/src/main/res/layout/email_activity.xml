@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7E80B8C5"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tv_cabecera_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/servicio_email"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tv_info_timeout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/info_timeout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#F8272626"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/email"
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:ems="10"
+            android:gravity="center_horizontal|center_vertical"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <TextView
+            android:id="@+id/tv_timeout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#F8272626"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/timeout_segundos"
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/et_timeout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:ems="10"
+            android:gravity="center_horizontal|center_vertical"
+            android:inputType="number"
+            android:text="900" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_servidor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Respuesta del servidor web"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_rservidor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Respuesta servidor" />
+
+        <TextView
+            android:id="@+id/tv_pers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Información"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_rpers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mensaje personalizado" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#F8272626"
+            android:onClick="onclickSOAP"
+            android:text="SOAP"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#F8272626"
+            android:onClick="onclickREST"
+            android:text="REST"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</LinearLayout>
